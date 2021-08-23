@@ -1,5 +1,8 @@
 # MoveNet-Python-Example
 [MoveNet](https://tfhub.dev/s?q=MoveNet)のPythonでの動作サンプルです。<br>
+
+![smjqx-4ndt8](https://user-images.githubusercontent.com/37477845/130482531-5be5f3e6-0dc9-42bb-80a8-4e7544d9ba7e.gif)
+
 2021/08/24時点でTensorFlow Hubで提供されている以下モデルを使用しています。
 * [movenet/singlepose/lightning(v4)](https://tfhub.dev/google/movenet/singlepose/lightning/4)
 * [movenet/singlepose/thunder(v4)](https://tfhub.dev/google/movenet/singlepose/thunder/4)
