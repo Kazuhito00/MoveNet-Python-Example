@@ -79,3 +79,6 @@ VideoCapture()取り込みデータを左右反転するか否か<br>
  
 # License 
 MoveNet-Python-Example is under [Apache-2.0 License](LICENSE).
+
+# License(Movie)
+サンプル動画は[NHKクリエイティブ・ライブラリー](https://www.nhk.or.jp/archives/creative/)の[ストリートバスケット](https://www2.nhk.or.jp/archives/creative/material/view.cgi?m=D0002080169_00000)を使用しています。
