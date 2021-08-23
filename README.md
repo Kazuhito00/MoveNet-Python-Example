@@ -35,8 +35,8 @@ VideoCapture()取り込みデータを左右反転するか否か<br>
 デフォルト：指定なし
 * --model_select<br>
 使用モデルの選択<br>
-Saved Model, ONNX：0→Lightning 1→Thunder<br>
-TFLite：0→Lightning(float16) 1→Thunder(float16) 2→Lightning(int8) 3→Thunder(int8)<br>
+Saved Model, ONNX：0→Lightning　1→Thunder<br>
+TFLite：0→Lightning(float16)　1→Thunder(float16)　2→Lightning(int8)　3→Thunder(int8)<br>
 デフォルト：0
 * --keypoint_score<br>
 キーポイント表示の閾値<br>
