@@ -73,7 +73,7 @@ VideoCapture()取り込みデータを左右反転するか否か<br>
 デフォルト：0.2
 
 # Reference
-* [TensorFlow Hub MoveNet](https://tfhub.dev/s?q=MoveNet)
+* [TensorFlow Hub：MoveNet](https://tfhub.dev/s?q=MoveNet)
 
 # Author
 高橋かずひと(https://twitter.com/KzhtTkhs)
