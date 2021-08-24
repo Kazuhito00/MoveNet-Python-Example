@@ -1,6 +1,6 @@
 # MoveNet-Python-Example
 [MoveNet](https://tfhub.dev/s?q=MoveNet)のPythonでの動作サンプルです。<br>
-またONNXに変換したモデルも同梱しています。変換を試したい方は[MoveNet_tf2onnx.ipynb](MoveNet_tf2onnx.ipynb)を使用ください。<br>
+ONNXに変換したモデルも同梱しています。変換自体を試したい方は[MoveNet_tf2onnx.ipynb](MoveNet_tf2onnx.ipynb)を使用ください。<br>
 
 ![smjqx-4ndt8](https://user-images.githubusercontent.com/37477845/130482531-5be5f3e6-0dc9-42bb-80a8-4e7544d9ba7e.gif)
 
