@@ -161,24 +161,24 @@ def draw_debug(
     # 0:鼻 1:左目 2:右目 3:左耳 4:右耳 5:左肩 6:右肩 7:左肘 8:右肘 # 9:左手首
     # 10:右手首 11:左股関節 12:右股関節 13:左ひざ 14:右ひざ 15:左足首 16:右足首
     for keypoints, scores in zip(keypoints_list, scores_list):
-        for index01, index02 in ((0, 1),  # Line：鼻 → 左目
-                                 (0, 2),  # Line：鼻 → 右目
-                                 (1, 3),  # Line：左目 → 左耳
-                                 (2, 4),  # Line：右目 → 右耳
-                                 (0, 5),  # Line：鼻 → 左肩
-                                 (0, 6),  # Line：鼻 → 右肩
-                                 (5, 6),  # Line：左肩 → 右肩
-                                 (5, 7),  # Line：左肩 → 左肘
-                                 (7, 9),  # Line：左肘 → 左手首
-                                 (6, 8),  # Line：右肩 → 右肘
-                                 (8, 10),  # Line：右肘 → 右手首
-                                 (11, 12),  # Line：左股関節 → 右股関節
-                                 (5, 11),  # Line：左肩 → 左股関節
-                                 (11, 13),  # Line：左股関節 → 左ひざ
-                                 (13, 15),  # Line：左ひざ → 左足首
-                                 (6, 12),  # Line：右肩 → 右股関節
-                                 (12, 14),  # Line：右股関節 → 右ひざ
-                                 (14, 16),  # Line：右ひざ → 右足首
+        for index01, index02 in ((0, 1), # Line：鼻 → 左目
+                                 (0, 2), # Line：鼻 → 右目
+                                 (1, 3), # Line：左目 → 左耳
+                                 (2, 4), # Line：右目 → 右耳
+                                 (0, 5), # Line：鼻 → 左肩
+                                 (0, 6), # Line：鼻 → 右肩
+                                 (5, 6), # Line：左肩 → 右肩
+                                 (5, 7), # Line：左肩 → 左肘
+                                 (7, 9), # Line：左肘 → 左手首
+                                 (6, 8), # Line：右肩 → 右肘
+                                 (8, 10), # Line：右肘 → 右手首
+                                 (11, 12), # Line：左股関節 → 右股関節
+                                 (5, 11), # Line：左肩 → 左股関節
+                                 (11, 13), # Line：左股関節 → 左ひざ
+                                 (13, 15), # Line：左ひざ → 左足首
+                                 (6, 12), # Line：右肩 → 右股関節
+                                 (12, 14), # Line：右股関節 → 右ひざ
+                                 (14, 16), # Line：右ひざ → 右足首
                                  ):
             if is_good_keypoints(index01, index02, keypoint_score_th, scores):
                 draw_keypoints(debug_image, index01, index02, keypoints)
