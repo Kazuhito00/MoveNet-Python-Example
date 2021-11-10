@@ -103,6 +103,7 @@ def main():
     input_size = 256
 
     onnx_session = onnxruntime.InferenceSession(model_path)
+    cv.namedWindow('MoveNet(multipose) Demo', cv.WINDOW_NORMAL)
 
     while True:
         start_time = time.time()

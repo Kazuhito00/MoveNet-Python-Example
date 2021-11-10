@@ -93,6 +93,8 @@ def main():
 
     onnx_session = onnxruntime.InferenceSession(model_path)
 
+    cv.namedWindow('MoveNet(singlepose) Demo', cv.WINDOW_NORMAL)
+
     while True:
         start_time = time.time()
 

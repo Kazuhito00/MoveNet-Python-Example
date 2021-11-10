@@ -103,6 +103,8 @@ def main():
     module = tfhub.load(model_url)
     model = module.signatures['serving_default']
 
+    cv.namedWindow('MoveNet(multipose) Demo', cv.WINDOW_NORMAL)
+
     while True:
         start_time = time.time()
 

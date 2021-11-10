@@ -100,6 +100,7 @@ def main():
     interpreter = tf.lite.Interpreter(model_path=model_path)
     interpreter.allocate_tensors()
 
+    cv.namedWindow('MoveNet(singlepose) Demo', cv.WINDOW_NORMAL)
     while True:
         start_time = time.time()
 
