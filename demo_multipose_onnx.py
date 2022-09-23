@@ -102,7 +102,13 @@ def main():
     model_path = "onnx/movenet_multipose_lightning_1.onnx"
     input_size = 256
 
-    onnx_session = onnxruntime.InferenceSession(model_path)
+    onnx_session = onnxruntime.InferenceSession(
+        model_path,
+        providers=[
+            'CUDAExecutionProvider',
+            'CPUExecutionProvider',
+        ],
+    )
 
     while True:
         start_time = time.time()

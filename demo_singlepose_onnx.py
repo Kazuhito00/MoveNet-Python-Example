@@ -91,7 +91,13 @@ def main():
             "*** model_select {} is invalid value. Please use 0-1. ***".format(
                 model_select))
 
-    onnx_session = onnxruntime.InferenceSession(model_path)
+    onnx_session = onnxruntime.InferenceSession(
+        model_path,
+        providers=[
+            'CUDAExecutionProvider',
+            'CPUExecutionProvider',
+        ],
+    )
 
     while True:
         start_time = time.time()
